@@ -1,4 +1,4 @@
-# Notes App w/ Flask
+## Notes App w/ Flask
 
 ### Basic Web Application created with Flask using a SQLite Database
 
@@ -15,7 +15,6 @@ __This mini project is still being tested and developed with AWS Services such a
 <br>
 
 ## Getting Started
-#
 
 This project was used in version Python 3.9+
 
