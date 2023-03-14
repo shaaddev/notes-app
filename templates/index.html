@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container with_border_boxes mb-3" id="options">
+        <h2 class="random_text">Notes:</h2>
+
+        <form method="post" action="/" enctype="multipart/form-data">
+            <input type="text" class="form-control form-margin" name="subject" placeholder="Subject" required>
+            <textarea type="text" id="todo-info" class="form-control form-margin topic-option" name="note" placeholder="Note" required></textarea>
+            <input type="file" name="user_file" class="form-control form-control-sm form-margin">
+            <input type="submit" class="btn btn-outline-primary btn-sm bye" value="Add"> 
+        </form>
+        <p>&copy; <script>document.write(new Date().getFullYear())</script> - Version 1</p>
+
+    </div>
+
+    {% for note in note_list %}
+    <div class="container for_with_border_boxes mb-3">
+        <strong class="random_text">Note:</strong>
+        <h3 class="subject">{{ note.subject }}</h3>
+        <p class="note">{{ note.note }}</p>
+        <a href="/edit/{{ note.id }}" class="btn btn-outline-secondary btn-sm" value="Edit">Edit</a>
+        <a href="/delete/{{ note.id }}" class="btn btn-outline-danger btn-sm" value="Delete">Delete</a>
+    </div>
+    {% endfor %}
+{% endblock %}
