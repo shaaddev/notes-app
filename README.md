@@ -1,6 +1,6 @@
 ## Notes App w/ Flask
 
-### Basic Web Application created with Flask using a SQLite Database
+#### Basic Web Application created with Flask using a SQLite Database
 
 <br>
 
